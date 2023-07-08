@@ -65,3 +65,17 @@ a {
   margin: 0;
   padding: 0;
 }
+
+.text-overlay {
+  position:absolute;
+  top: 80%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+}
+.banner {
+  position: relative;
+  margin-bottom: 40px;
+}
