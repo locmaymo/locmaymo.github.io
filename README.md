@@ -1,1 +1,1 @@
-# locmaymo.github.io
+# https://locmaymo.github.io
