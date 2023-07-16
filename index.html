@@ -8,30 +8,12 @@
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
 
     <!--bootstrap Stylesheet-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+
+    <!--bootstrap js-->
+    <script src="bootstrap/bootstrap.js"></script>
 
     <!--custom js-->
-
     <script src="js/main.js"></script>
 
     <!--custom Stylesheet-->
@@ -42,18 +24,31 @@
       <header class="header bg-white">
         <div class="container">
           <div class="row">
-            <div class="col d-flex justify-content-start align-items-center">
-              <img src="img/ptit.jpg" alt="" />
+            <div
+              class="col-md-7 d-flex justify-content-start align-items-center"
+            >
+              <img class="img-fluid" src="img/ptit.jpg" alt="" />
+              <!-- img-fluid sẽ giúp logo width 100% height auto -->
             </div>
-            <div class="col d-flex justify-content-end align-items-center">
+            <div class="col-md d-flex justify-content-end align-items-center">
               <div class="row">
-                <div class="col text-nowrap" style="padding: 2px">
+                <div
+                  class="col text-nowrap d-none d-md-block"
+                  style="padding: 2px"
+                >
+                  <!-- text-nowrap chống chữ tràn xuống dòng và d-none và d-md-block để giúp link chỉ hiển thị mức md trở lên -->
                   <a href="#">Lab News</a>
                 </div>
-                <div class="col text-nowrap" style="padding: 2px">
+                <div
+                  class="col text-nowrap d-none d-md-block"
+                  style="padding: 2px"
+                >
                   <a href="#">.</a>
                 </div>
-                <div class="col text-nowrap" style="padding: 2px">
+                <div
+                  class="col text-nowrap d-none d-md-block"
+                  style="padding: 2px"
+                >
                   <a href="#">Internal site</a>
                 </div>
               </div>
@@ -95,17 +90,17 @@
                   About Our Research
                 </a>
                 <ul
-                  class="dropdown-menu shadow vw-100"
+                  class="dropdown-menu shadow w-100"
                   aria-labelledby="navbarDropdown"
                 >
                   <div class="container">
                     <div class="row">
-                      <div class="col">
+                      <div class="col-md">
                         <li>
                           <a class="dropdown-item" href="#">Current project</a>
                         </li>
                       </div>
-                      <div class="col">
+                      <div class="col-md">
                         <li><a class="dropdown-item" href="#">Talk</a></li>
                       </div>
                     </div>
@@ -128,28 +123,28 @@
                   aria-labelledby="navbarDropdown"
                 >
                   <div class="row">
-                    <div class="col">
+                    <div class="col-md">
                       <li>
                         <a class="dropdown-item" href="#"
                           >Pgs tiến sĩ Phạm Văn Cường</a
                         >
                       </li>
                     </div>
-                    <div class="col">
+                    <div class="col-md">
                       <li>
                         <a class="dropdown-item" href="#"
                           >Tiến sĩ Trần Tiến Công</a
                         >
                       </li>
                     </div>
-                    <div class="col">
+                    <div class="col-md">
                       <li>
                         <a class="dropdown-item" href="#"
                           >Tiến sĩ Đỗ Tiến Dũng</a
                         >
                       </li>
                     </div>
-                    <div class="col">
+                    <div class="col-md">
                       <li>
                         <a class="dropdown-item" href="#"
                           >Tiến sĩ Nguyễn Kiều Linh</a
@@ -173,107 +168,348 @@
         </div>
       </nav>
     </div>
-
+    <!-- phần nội dung web -->
     <div class="content">
       <div class="banner">
         <div class="zoom-out-img">
           <img class="img w-100" src="img/hero.jpg" alt="" />
-          <div class="text-overlay">
-            Source code:
-            <a
-              href="https://github.com/locmaymo/locmaymo.github.io"
-              target="_blank"
-              >github/locmaymo</a
-            >
+          <div class="container">
+            <div class="text-overlay">
+              Source code:
+              <a
+                href="https://github.com/locmaymo/locmaymo.github.io"
+                target="_blank"
+                >github/locmaymo</a
+              >
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- phần đầu -->
       <div class="container">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-          ultrices, purus sed ornare feugiat, leo ante facilisis nulla, sed
-          tristique dui mauris nec augue. Sed volutpat at tellus quis vehicula.
-          Maecenas tempor mattis elit sed ultricies. Integer mollis augue quis
-          ante commodo, vehicula convallis dolor ornare. Sed justo odio,
-          pharetra sit amet pulvinar sed, maximus a enim. Nunc efficitur a orci
-          a malesuada. Mauris nec bibendum orci. Sed et sapien vitae nibh
-          lacinia luctus. Praesent iaculis turpis at enim cursus, vel rutrum
-          nisl aliquam. Morbi vel fermentum massa, vitae vestibulum orci. Morbi
-          luctus mattis eros. Fusce nibh sem, pharetra ut fringilla ac, faucibus
-          id ex. Etiam at felis ut mi porta dignissim id non arcu. Pellentesque
-          volutpat aliquam ipsum, et sagittis elit vestibulum vel. Donec vitae
-          erat ac turpis pharetra varius id eu libero. Nullam elementum vel
-          tellus at faucibus. Phasellus a arcu mattis, elementum metus ac, porta
-          nisi. Proin malesuada nibh vitae cursus rutrum. Donec id eros ornare
-          est volutpat euismod ac venenatis tellus. In aliquam blandit urna, a
-          tempor nisl tincidunt et. Sed nunc tellus, tincidunt et magna vel,
-          sagittis luctus odio. Interdum et malesuada fames ac ante ipsum primis
-          in faucibus. Nullam congue odio facilisis, fermentum sapien in,
-          pellentesque enim. Praesent dapibus placerat purus nec fringilla.
-          Pellentesque ac est arcu. Donec placerat id augue eget tempor.
-          Phasellus tincidunt libero massa, et molestie libero gravida non. In
-          tellus libero, tempus vestibulum placerat nec, posuere sagittis quam.
-          Fusce ipsum est, porta vel scelerisque vel, facilisis ac metus.
-          Quisque rutrum eu justo at tincidunt. Praesent dignissim nunc
-          pellentesque dapibus tristique. Pellentesque risus nulla, venenatis et
-          luctus non, pulvinar placerat turpis. Nam semper mi et elit facilisis
-          malesuada. Nam ac elit sapien. In nulla erat, consectetur sit amet
-          enim vitae, auctor imperdiet sapien. Proin laoreet dui finibus,
-          interdum magna ac, porttitor dui. Nam eu ex ac eros accumsan
-          facilisis. Suspendisse potenti. Phasellus a laoreet risus. Aenean
-          ullamcorper mauris tellus. Nam non gravida magna. Duis maximus justo
-          sed felis feugiat laoreet. Pellentesque porttitor odio mollis odio
-          lacinia, a cursus massa faucibus. In imperdiet mi quis augue facilisis
-          scelerisque. Aenean non posuere nibh. Etiam quis augue sem. Vivamus
-          congue nulla nisi, vel semper eros accumsan a. Etiam condimentum, enim
-          ac fringilla congue, nisi ex sodales arcu, eget cursus odio neque quis
-          dui. Sed a orci mollis purus vulputate auctor a cursus urna. Donec
-          efficitur sit amet massa ac cursus. Fusce lorem nisl, fermentum sit
-          amet ultricies nec, rutrum sed libero. Aliquam augue nisi,
-          pellentesque in magna eu, pretium molestie dolor. Duis suscipit arcu
-          ut elit tristique, nec congue metus elementum. Vestibulum vitae
-          faucibus urna. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Pellentesque vitae luctus nisl,
-          sit amet placerat ante. Duis eget lacinia metus, quis commodo tortor.
-          Proin luctus massa eu lectus viverra, ac eleifend justo semper.
-          Vestibulum porttitor sem eget nisl maximus dignissim. Donec et felis
-          nulla. Morbi dapibus justo in egestas bibendum. Generated 5
-          paragraphs, 486 words, 3217 bytes of Lorem Ipsum Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit. Curabitur ultrices, purus sed
-          ornare feugiat, leo ante facilisis nulla, sed tristique dui mauris nec
-          augue. Sed volutpat at tellus quis vehicula. Maecenas tempor mattis
-          elit sed ultricies. Integer mollis augue quis ante commodo, vehicula
-          convallis dolor ornare. Sed justo odio, pharetra sit amet pulvinar
-          sed, maximus a enim. Nunc efficitur a orci a malesuada. Mauris nec
-          bibendum orci. Sed et sapien vitae nibh lacinia luctus. Praesent
-          iaculis turpis at enim cursus, vel rutrum nisl aliquam. Morbi vel
-          fermentum massa, vitae vestibulum orci. Morbi luctus mattis eros.
-          Fusce nibh sem, pharetra ut fringilla ac, faucibus id ex. Etiam at
-          felis ut mi porta dignissim id non arcu. Pellentesque volutpat aliquam
-          ipsum, et sagittis elit vestibulum vel. Donec vitae erat ac turpis
-          pharetra varius id eu libero. Nullam elementum vel tellus at faucibus.
-          Phasellus a arcu mattis, elementum metus ac, porta nisi. Proin
-          malesuada nibh vitae cursus rutrum. Donec id eros ornare est volutpat
-          euismod ac venenatis tellus. In aliquam blandit urna, a tempor nisl
-          tincidunt et. Sed nunc tellus, tincidunt et magna vel, sagittis luctus
-          odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          Nullam congue odio facilisis, fermentum sapien in, pellentesque enim.
-          Praesent dapibus placerat purus nec fringilla. Pellentesque ac est
-          arcu.
-        </p>
+        <div class="row">
+          <div class="col-md-8">
+            <h2>What is Lorem Ipsum?</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+            <h2>Where does it come from?</h2>
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia, looked up one of
+              the more obscure Latin words, consectetur, from a Lorem Ipsum
+              passage, and going through the cites of the word in classical
+              literature, discovered the undoubtable source. Lorem Ipsum comes
+              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+              BC. This book is a treatise on the theory of ethics, very popular
+              during the Renaissance. The first line of Lorem Ipsum, "Lorem
+              ipsum dolor sit amet..", comes from a line in section 1.10.32. The
+              standard chunk of Lorem Ipsum used since the 1500s is reproduced
+              below for those interested. Sections 1.10.32 and 1.10.33 from "de
+              Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+              exact original form, accompanied by English versions from the 1914
+              translation by H. Rackham.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h2>Why do we use it?</h2>
+            <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages and web page editors now use Lorem Ipsum as
+              their default model text, and a search for 'lorem ipsum' will
+              uncover many web sites still in their infancy. Various versions
+              have evolved over the years, sometimes by accident, sometimes on
+              purpose (injected humour and the like).
+            </p>
+          </div>
+        </div>
+        <!-- phần ads banner gồm có div ảnh để trigger modal fade -->
+        <div
+          class="image-thumbnail-container"
+          data-bs-toggle="modal"
+          data-bs-target="#imageViewModal"
+        >
+          <img src="img/ads.jpg" class="img-fluid" alt="Image" />
+        </div>
+
+        <div
+          class="modal fade"
+          id="imageViewModal"
+          tabindex="-1"
+          aria-labelledby="imageViewModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body p-0">
+                <div class="image-view">
+                  <button
+                    type="text"
+                    class="btn-close position-absolute bottom-0 bg-white start-50 m-3"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                  <img src="img/ads.jpg" alt="Image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- phần nội dung 2 -->
+        <div>
+          <h1 class="text-center">Lorem Ipsum</h1>
+          <div class="row">
+            <div class="col-md-4">
+              <h2>The standard Lorem Ipsum passage, used since the 1500s</h2>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h2>
+                Section 1.10.32 of "de Finibus Bonorum et Malorum", written by
+                Cicero in 45 BC
+              </h2>
+              <p>
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem. Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut
+                aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                reprehenderit qui in ea voluptate velit esse quam nihil
+                molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                voluptas nulla pariatur?"
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h2>
+                Section 1.10.32 of "de Finibus Bonorum et Malorum", written by
+                Cicero in 45 BC
+              </h2>
+              <p>
+                "But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will give
+                you a complete account of the system, and expound the actual
+                teachings of the great explorer of the truth, the master-builder
+                of human happiness. No one rejects, dislikes, or avoids pleasure
+                itself, because it is pleasure, but because those who do not
+                know how to pursue pleasure rationally encounter consequences
+                that are extremely painful. Nor again is there anyone who loves
+                or pursues or desires to obtain pain of itself, because it is
+                pain, but because occasionally circumstances occur in which toil
+                and pain can procure him some great pleasure. To take a trivial
+                example, which of us ever undertakes laborious physical
+                exercise, except to obtain some advantage from it? But who has
+                any right to find fault with a man who chooses to enjoy a
+                pleasure that has no annoying consequences, or one who avoids a
+                pain that produces no resultant pleasure?"
+              </p>
+            </div>
+          </div>
+          <div class="d-md-flex justify-content-md-center">
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-lg text-decoration-underline"
+            >
+              More News
+            </button>
+          </div>
+        </div>
+        <!-- phần nội dung 3 -->
+        <div>
+          <h1 class="text-center">Lab Photos</h1>
+          <div class="row">
+            <div class="col-md-3 col-6 mb-4">
+              <div
+                class="img-container"
+                data-bs-toggle="modal"
+                data-bs-target="#imageViewModal1"
+              >
+                <img src="img/phamvancuong.png" class="image" alt="Image" />
+                <div class="overlay">
+                  <div class="text">Phạm Văn Cường</div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="imageViewModal1"
+                tabindex="-1"
+                aria-labelledby="imageViewModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-fullscreen modal-dialog-centered"
+                >
+                  <div class="modal-content">
+                    <div class="modal-body p-0">
+                      <div class="image-view">
+                        <button
+                          type="text"
+                          class="btn-close position-absolute bottom-0 bg-white start-50 m-3"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                        <img src="img/phamvancuong.png" alt="Image" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+              <div
+                class="img-container"
+                data-bs-toggle="modal"
+                data-bs-target="#imageViewModal2"
+              >
+                <img src="img/trantiencong.png" class="image" alt="Image" />
+                <div class="overlay">
+                  <div class="text">Trần Tiến Công</div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="imageViewModal2"
+                tabindex="-1"
+                aria-labelledby="imageViewModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-fullscreen modal-dialog-centered"
+                >
+                  <div class="modal-content">
+                    <div class="modal-body p-0">
+                      <div class="image-view">
+                        <button
+                          type="text"
+                          class="btn-close position-absolute bottom-0 bg-white start-50 m-3"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                        <img src="img/trantiencong.png" alt="Image" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+              <div
+                class="img-container"
+                data-bs-toggle="modal"
+                data-bs-target="#imageViewModal3"
+              >
+                <img src="img/dotiendung.png" class="image" alt="Image" />
+                <div class="overlay"><div class="text">Đỗ Tiến Dũng</div></div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="imageViewModal3"
+                tabindex="-1"
+                aria-labelledby="imageViewModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-fullscreen modal-dialog-centered"
+                >
+                  <div class="modal-content">
+                    <div class="modal-body p-0">
+                      <div class="image-view">
+                        <button
+                          type="text"
+                          class="btn-close position-absolute bottom-0 bg-white start-50 m-3"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                        <img src="img/dotiendung.png" alt="Image" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+              <div
+                class="img-container"
+                data-bs-toggle="modal"
+                data-bs-target="#imageViewModal4"
+              >
+                <img src="img/nguyenkieulinh.png" class="image" alt="Image" />
+                <div class="overlay">
+                  <div class="text">Nguyễn Kiều Linh</div>
+                </div>
+              </div>
+
+              <div
+                class="modal fade"
+                id="imageViewModal4"
+                tabindex="-1"
+                aria-labelledby="imageViewModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-fullscreen modal-dialog-centered"
+                >
+                  <div class="modal-content">
+                    <div class="modal-body p-0">
+                      <div class="image-view">
+                        <button
+                          type="text"
+                          class="btn-close position-absolute bottom-0 bg-white start-50 m-3"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                        <img src="img/nguyenkieulinh.png" alt="Image" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-md-flex justify-content-md-center">
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-lg text-decoration-underline"
+            >
+              More Photos
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!--bootstrap js-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
