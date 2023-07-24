@@ -7,6 +7,11 @@
 
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
 
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <!--bootstrap Stylesheet-->
     <link rel="stylesheet" href="bootstrap/bootstrap.css" />
 
@@ -27,8 +32,10 @@
             <div
               class="col-md-7 d-flex justify-content-start align-items-center"
             >
-              <img class="img-fluid" src="img/ptit.jpg" alt="" />
               <!-- img-fluid sẽ giúp logo width 100% height auto -->
+              <a href="https://locmaymo.github.io/"
+                ><img class="img-fluid" src="img/ptit.jpg" alt=""
+              /></a>
             </div>
             <div class="col-md d-flex justify-content-end align-items-center">
               <div class="row">
@@ -76,7 +83,12 @@
           >
             <ul class="navbar-nav fs-3 fw-light">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="https://locmaymo.github.io/"
+                  >Home</a
+                >
               </li>
               <li class="nav-item dropdown position-static">
                 <a
@@ -337,10 +349,7 @@
             </div>
           </div>
           <div class="d-md-flex justify-content-md-center">
-            <button
-              type="button"
-              class="btn btn-outline-primary btn-lg text-decoration-underline"
-            >
+            <button type="button" class="btn btn-outline-primary btn-lg">
               More News
             </button>
           </div>
@@ -501,12 +510,85 @@
             </div>
           </div>
           <div class="d-md-flex justify-content-md-center">
-            <button
-              type="button"
-              class="btn btn-outline-primary btn-lg text-decoration-underline"
-            >
+            <button type="button" class="btn btn-outline-primary btn-lg">
               More Photos
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="location">
+                <i
+                  class="bi bi-geo-alt-fill pe-2"
+                  style="font-size: 2.8rem; color: #bb1d1d"
+                ></i>
+                <div>
+                  <h4>Học Viện Công Nghệ Bưu Chính Viễn Thông</h4>
+                  96A Trần Phú, P. Mộ Lao, Hà Đông, Hà Nội
+                </div>
+              </div>
+            </div>
+            <!-- d-flex justify-content-center: để content được căn giữa. Còn justify-content-md-start: để content từ trái sang phải khi ở size md trở lên-->
+            <div
+              class="col-md-3 d-flex justify-content-center justify-content-md-start"
+            >
+              <a href="http://fb.com/fb.phamloc" target="_blank">
+                <!-- d-none d-md-block: để chữ Follow Me được ẩn đi khi size md -->
+                <h4 class="p-0 mb-1 d-none d-md-block">Follow Me</h4>
+                <i class="bi bi-facebook" style="font-size: 2.8rem"></i>
+              </a>
+            </div>
+            <!-- d-none d-md-block: chỉ hiển thị khi size từ md trở lên -->
+            <div class="col-md-3 d-none d-md-block">
+              <ul class="menu-bottom">
+                <li class="mb-1">
+                  <a class="bottom-links" href="https://locmaymo.github.io/"
+                    >Home</a
+                  >
+                </li>
+                <li class="mb-1">
+                  <a class="bottom-links" href="#">About Our Research</a>
+                </li>
+                <li class="mb-1">
+                  <a class="bottom-links" href="#">People</a>
+                </li>
+                <li class="mb-1">
+                  <a class="bottom-links" href="#">Publications</a>
+                </li>
+                <li class="mb-1">
+                  <a class="bottom-links" href="#">Get Involved</a>
+                </li>
+                <li class="mb-1">
+                  <a class="bottom-links" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer2">
+        <div class="container">
+          <div class="row pt-3">
+            <div
+              class="col-lg-4 col-md-12 d-flex justify-content-center justify-content-lg-start"
+            >
+              <img class="img-fluid mb-3" src="img/footer.png" alt="" />
+            </div>
+            <div
+              class="col-lg-8 col-md-12 justify-content-center justify-content-lg-start text-center"
+            >
+              <a class="bottom-links-2" href="#">@2023 B19DCCN403</a>
+              <a class="bottom-links-2" href="#">Accessibility</a>
+              <a class="bottom-links-2" href="#">Nondiscrimination</a>
+              <a class="bottom-links-2" href="#">Careers</a>
+              <a class="bottom-links-2" href="#">Built using Columbia Sites</a>
+            </div>
           </div>
         </div>
       </div>
