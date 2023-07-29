@@ -1,5 +1,5 @@
 /* links style */
-a:hover{
+a:hover {
   color: #8c0101;
 }
 .bottom-links {
@@ -7,12 +7,12 @@ a:hover{
 }
 .bottom-links-2 {
   color: #ffffff;
+  text-decoration: underline;
   padding-left: 10px;
 }
-.bottom-links-2:hover{
-  color:#ffffff;
+.bottom-links-2:hover {
+  color: #ffffff;
 }
-
 
 /* header  */
 .header {
@@ -30,6 +30,7 @@ a:hover{
 
 .navbar .nav-link {
   margin-right: 30px;
+  font-weight: 320;
 }
 
 /* animation cho dropdown */
@@ -50,8 +51,6 @@ a:hover{
     pointer-events: initial;
   }
 }
-
-
 
 .dropdown-menu :focus {
   background-color: #bb1d1d;
@@ -249,4 +248,35 @@ p {
 .location {
   display: flex;
   align-items: center;
+}
+
+/* tùy chỉnh nút lên đầu trang cho mỗi kích thước màn hình */
+@media (min-width: 991px) {
+  #back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    padding: 10px;
+    background-color: #d11c1c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 991px) {
+  #back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    padding: 10px;
+    background-color: #d11c1c;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+  }
 }
