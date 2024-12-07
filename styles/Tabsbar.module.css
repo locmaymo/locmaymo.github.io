@@ -1,0 +1,30 @@
+.tabs {
+  display: flex;
+  /* flex-wrap: wrap; */
+  background: var(--tabs-bg);
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .tabs {
+    width: 100vmin;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tabs {
+    width: 89vmin;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tabs {
+    width: 88vmin;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .tabs {
+    width: 80vmin;
+  }
+}
